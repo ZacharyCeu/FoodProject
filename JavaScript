@@ -1,0 +1,20 @@
+//name library below//
+var titles = [
+  'Subway',
+  'Dagelijks Lekker',
+  'Wrappiez',
+  'Albert Heijn',
+  'Asian Kitchen',
+  'Eazie',
+  'The Falafel Place',
+  'Backwerk',
+  // if adding, place in 'quotations' and remember comma // 
+];
+
+//script to give random title//
+function newTitle() {
+  var i = (Math.random() * titles.length) | 0;
+  target.innerText = titles[i];
+}
+// add to load title when page opens // 
+newTitle();
